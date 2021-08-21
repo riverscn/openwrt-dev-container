@@ -1,5 +1,7 @@
 # Introduction
-Build openwrt in a container.
+Build OpenWrt in a container? That's simple.
+
+Explore and develop OpenWrt in a container? Don't panic, this is the way.
 
 # Usage
 
@@ -28,6 +30,10 @@ Workspace files is stored in two volumes:
 * env-data: persists files in `/workspace`
 
 * env-home: persists files in `/home/vscode`
+
+When container is stopped, these files are still there.
+
+You can easily download and upload files in VSCode's "explorer" tab.
 
 ## Define your own environment
 
