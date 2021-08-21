@@ -1,2 +1,2 @@
-# openwrt-kexue
-Surf Internet in Kexue way
+# openwrt-dev-container
+Build openwrt in a container.
