@@ -1,21 +1,22 @@
 version: "3.9"
 services:
-  openwrt-devenv:
+  devenv:
     build:
       context: .
     user: vscode
-    stdin_open: true
-    tty: true
+    working_dir: /workspace
+    # stdin_open: true
+    # tty: true
     volumes:
       - type: volume
-        source: openwrt-devenv-data
+        source: env-data
         target: /workspace
       - type: volume
-        source: openwrt-devenv-home
+        source: env-home
         target: /home/vscode
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
 volumes:
-  openwrt-devenv-data:
-  openwrt-devenv-home:
+  env-data:
+  env-home:
